@@ -2,12 +2,13 @@
 public class ContaOrdem extends ContaBancaria {
 
 	private String regimeDeTitularidade;
-	private double valorDeposito;
 
-	public ContaOrdem(int numero, String titular, double saldo, String regimeDeTitularidade, double valorDeposito) {
+	
+	
+	public ContaOrdem(int numero, String titular, double saldo, String regimeDeTitularidade) {
 		super(numero, titular, saldo);
 		this.regimeDeTitularidade = regimeDeTitularidade;
-		this.valorDeposito = valorDeposito;
+
 	}
 
 	public double deposito(double valor) {
@@ -16,7 +17,7 @@ public class ContaOrdem extends ContaBancaria {
 	}
 
 	public double saldoReal(double valor) {
-		return saldo + (valor * 1)/100;
+		return saldo + (valor * 1) / 100;
 	}
 
 	public String getRegimeDeTitularidade() {
@@ -27,12 +28,4 @@ public class ContaOrdem extends ContaBancaria {
 		this.regimeDeTitularidade = regimeDeTitularidade;
 	}
 
-	public double getValorDeposito() {
-		return valorDeposito;
-	}
-
-	public void setValorDeposito(double valorDeposito) {
-		this.valorDeposito = valorDeposito;
-	}
-	
 }

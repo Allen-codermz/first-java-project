@@ -1,4 +1,4 @@
-	
+
 public class ContaBancaria {
 
 	protected int numero;
@@ -38,15 +38,14 @@ public class ContaBancaria {
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
-	
+
 	public double deposito(double valor) {
 		saldo += valor;
 		return saldo;
 	}
-	
-	public double saldoReal() {
+
+	public double saldoReal(double valor) {
 		return saldo;
 	}
 
-	
 }

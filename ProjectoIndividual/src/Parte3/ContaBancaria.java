@@ -1,6 +1,6 @@
 package Parte3;
 
-abstract class ContaBancaria {
+public abstract class ContaBancaria implements SaldoReal {
 
 	protected int numero;
 	protected String titular;
@@ -42,5 +42,4 @@ abstract class ContaBancaria {
 
 	public abstract double deposito(double valor);
 
-	
 }
